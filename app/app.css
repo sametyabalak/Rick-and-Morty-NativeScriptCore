@@ -1,0 +1,47 @@
+﻿
+@import "~@nativescript/theme/css/core.css";
+@import "~@nativescript/theme/css/default.css";
+
+/* Place any CSS rules you want to apply on both iOS and Android here.
+This is where the vast majority of your CSS code goes. */
+
+/*
+The following CSS rule changes the font size of all Buttons that have the
+"-primary" class modifier.
+*/
+Page{
+    background-color: rgb(247, 239, 239);
+}
+.flex-char {
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+  }
+  .stack-char {
+    width: 400;
+    padding: 10 16;
+    border-color: transparent;
+    border-width: 2;
+  }
+
+  .char-labels{
+      color: black;
+  }
+
+ActionBar {
+    background-color: rgb(41, 37, 37);
+    color: white;
+} 
+.description-label{
+    margin-bottom: 10;
+    text-align: left;
+}
+.characters-label{
+    margin-top: 20;
+    text-align: left;
+}
+
+.home-panel{
+    vertical-align: center;
+    margin: 15;
+}

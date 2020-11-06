@@ -1,0 +1,31 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar>
+        <NavigationButton tap="onBackButtonTap" android.systemIcon="ic_menu_back"/>
+    </ActionBar>
+    <FlexboxLayout class="flex-char">
+    <StackLayout orientation="vertical" class="stack-char" androidElevation="6">
+                <Image id="image" src="" width="400px" height="400px" class="img-rounded m-20 "/>
+                <StackLayout orientation="horizontal">
+                <Label class="char-labels m-r-5" fontSize="20" fontWeight="bold" text="Name :" textWrap="true"/>
+                <Label id="name" class="char-labels" fontSize="18"  text="name" textWrap="true"/>
+                </StackLayout>
+                <StackLayout class="hr m-10"></StackLayout>
+                <StackLayout orientation="horizontal">
+                <Label class="char-labels m-r-5" fontSize="20" fontWeight="bold" text="Status :" textWrap="true"/>
+                <Label id="status" class="char-labels" fontSize="18"  text="status" textWrap="true"/>
+                </StackLayout>
+                <StackLayout class="hr m-10"></StackLayout>
+                <StackLayout orientation="horizontal">
+                <Label class="char-labels m-r-5" fontSize="20" fontWeight="bold" text="Species :" textWrap="true"/>
+                <Label id="species" class="char-labels" fontSize="18"  text="species" textWrap="true"/>
+                </StackLayout>
+                <StackLayout class="hr m-10"></StackLayout>
+                <StackLayout orientation="horizontal">
+                <Label class="char-labels m-r-5" fontSize="20" fontWeight="bold" text="Gender :" textWrap="true"/>
+                <Label id="gender" class="char-labels" fontSize="18" text="gender" textWrap="true"/>
+                </StackLayout>
+        </StackLayout>
+    
+    </FlexboxLayout>
+            
+</Page>

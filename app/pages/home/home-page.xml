@@ -1,0 +1,49 @@
+
+<Page loaded="pageLoaded" navigatingTo="onNavigatingTo" xmlns="http://www.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" >
+	<ActionBar title="Rick And Morty">
+	</ActionBar>
+		<StackLayout class="home-panel">
+		<StackLayout orientation="horizontal">
+                <Image src="~/images/e8.png" width="250px" class="img-rounded m-r-20" height="250px" stretch="aspectFill" />
+              <StackLayout orientation="vertical">
+               <Label textWrap="true" text="{{ eName }}"
+                class="h1 description-label" />
+            <Label textWrap="true"
+                text="{{ eDate }}"
+                class="h3 description-label" />
+              </StackLayout>
+        </StackLayout>
+            <Label textWrap="true" text="{{eEpisode}}"
+                class="h2 characters-label" />
+                <StackLayout class="hr m-10"></StackLayout>
+         <ListView 
+         items="{{ characters }}" 
+         itemTap="onItemTap" 
+         id="listView"
+         loaded="{{ onListViewLoaded }}" 
+         style="height:1250px">
+                <ListView.itemTemplate>
+                    <StackLayout orientation="horizontal" id="{{ id }}">
+                    <Image src="{{ image }}"
+                            class="thumb img-circle" />
+                            <Label text="{{ name }}" class="t-20"
+                            verticalAlignment="center" style="width: 60%" />
+                    </StackLayout>
+                </ListView.itemTemplate>
+            </ListView>
+		</StackLayout>
+</Page>
+  <!-- <lv:RadListView items="{{ characters }}" class="list-group"> 
+            <lv:RadListView.listViewLayout>
+            <lv:ListViewLinearLayout scrollDirection="Vertical"/>
+              </lv:RadListView.listViewLayout>
+                <lv:RadListView.itemTemplate>
+                     <GridLayout class="list-group-item" rows="auto" columns="auto, *">
+                         <Image row="0" col="0" src="{{ image }}" class="thumb img-rounded" />
+                         <StackLayout row="0" col="1" >
+                             <Label text="{{ name }}" class="list-group-item-heading" />
+                             <Label text="{{ status }}" class="list-group-item-text" />
+                        </StackLayout>
+                     </GridLayout>
+                </lv:RadListView.itemTemplate>
+            </lv:RadListView> -->

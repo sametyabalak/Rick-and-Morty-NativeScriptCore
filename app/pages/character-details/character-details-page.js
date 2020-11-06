@@ -1,5 +1,5 @@
 const fromObject = require("tns-core-modules/data/observable").fromObject;
-const axios = require("axios/dist/axios").default;
+const axios = require("axios").default;
 
 async function onNavigatingTo(args) {
     const page = args.object;

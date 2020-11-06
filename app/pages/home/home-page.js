@@ -1,6 +1,6 @@
 const { fromObject } = require("@nativescript/core");
 // const { convertHSLToRGBColor } = require("@nativescript/core/css/parser");
-const axios = require("axios/dist/axios").default;
+const axios = require("axios").default;
 
 async function onNavigatingTo(args) {
     const page = args.object;

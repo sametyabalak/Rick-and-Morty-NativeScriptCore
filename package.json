@@ -29,7 +29,8 @@
   },
   "devDependencies": {
     "@nativescript/android": "7.0.1",
-    "@nativescript/webpack": "~3.0.0"
+    "@nativescript/webpack": "~3.0.0",
+    "net": "^1.0.2"
   },
   "private": "true",
   "readme": "NativeScript Application"

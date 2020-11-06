@@ -1,5 +1,5 @@
 
-<Page loaded="pageLoaded" navigatingTo="onNavigatingTo" xmlns="http://www.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" >
+<Page loaded="pageLoaded" navigatingTo="onNavigatingTo" xmlns="http://www.nativescript.org/tns.xsd">
 	<ActionBar title="Rick And Morty">
 	</ActionBar>
 		<StackLayout class="home-panel">

@@ -2,6 +2,7 @@
     <ActionBar>
         <NavigationButton tap="onBackButtonTap" android.systemIcon="ic_menu_back"/>
     </ActionBar>
+    <ScrollView>
     <FlexboxLayout class="flex-char">
     <StackLayout orientation="vertical" class="stack-char" androidElevation="6">
                 <Image id="image" src="" width="400px" height="400px" class="img-rounded m-20 "/>
@@ -25,7 +26,6 @@
                 <Label id="gender" class="char-labels" fontSize="18" text="gender" textWrap="true"/>
                 </StackLayout>
         </StackLayout>
-    
     </FlexboxLayout>
-            
+    </ScrollView>
 </Page>
